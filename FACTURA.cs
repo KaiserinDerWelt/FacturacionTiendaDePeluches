@@ -24,12 +24,27 @@ namespace FacturacionTiendaDePeluches
             {
               return NoPieza;}
             set
-            { NoPieza = value; }
+            {
+                NoPieza = value;
+            }
                
             
         }
 
         // Uso de get set para la descripcion del peluche
+
+        public string PelucheDescripcion
+        {
+            get
+            {
+                return Descripcion;
+            }
+
+            set
+            {
+                Descripcion = value;
+            }
+        }
 
         //Uso de get set para cantidad de productos
 
