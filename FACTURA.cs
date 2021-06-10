@@ -48,6 +48,25 @@ namespace FacturacionTiendaDePeluches
 
         //Uso de get set para cantidad de productos
 
+        public int PelucheCantidad
+        {
+            get
+            {
+                return CantidadProductos;
+            }
+            set{
+                if (value <= 0)
+                {
+                    CantidadProductos = 0;
+                }
+                else
+                {
+                    CantidadProductos = value;
+                }
+            }
+            
+        }
+
         //Uso de Get set para precio
 
 
