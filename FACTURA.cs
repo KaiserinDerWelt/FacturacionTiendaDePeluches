@@ -69,7 +69,24 @@ namespace FacturacionTiendaDePeluches
 
         //Uso de Get set para precio
 
-
+        public double PeluchePrecio
+        {
+            get
+            {
+                return PrecioProducto;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    PrecioProducto = 0.0;
+                }
+                else
+                {
+                    PrecioProducto = value;
+                }
+            }
+        }
 
 
     }
