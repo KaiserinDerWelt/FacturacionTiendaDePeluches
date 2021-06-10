@@ -88,6 +88,15 @@ namespace FacturacionTiendaDePeluches
             }
         }
 
+        ~FACTURA() {
+            NoPieza = "";
+            Descripcion = "";
+            CantidadProductos = 0;
+            PrecioProducto = 0.0;
+        }
+
+
+
 
     }
 }
