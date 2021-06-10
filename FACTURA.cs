@@ -123,7 +123,8 @@ namespace FacturacionTiendaDePeluches
             double CalculoIVA = PrecioProducto * IVA;
             double Total = CalculoIVA + MontoBruto;
             double CostoTotalParaNuevosClientes = Total + MembresiaAnual;
-            return Total;
+
+            return CostoTotalParaNuevosClientes;
         }
 
 
