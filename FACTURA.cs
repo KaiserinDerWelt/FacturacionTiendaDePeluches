@@ -95,7 +95,36 @@ namespace FacturacionTiendaDePeluches
             PrecioProducto = 0.0;
         }
 
+        // Metodo para facturar normalito
+        public double importeFactura(double PrecioProducto, int CantidadProductos)
+        {
+         if(CantidadProductos < 0)
+            {
+                PrecioProducto = 0.0;
+            }
+            double MontoBruto = PrecioProducto * CantidadProductos;
+            var IVA = 0.16;
+            double CalculoIVA = PrecioProducto * IVA;
+            double Total = CalculoIVA + MontoBruto;
+            Console.WriteLine("Subtotal:" + MontoBruto) ;
+            Console.WriteLine("I.V.A Calculado:" + CalculoIVA);
+            return Total;
+        }
 
+        // Metodo para facturar sobrecargado
+        public double importeFactura(double PrecioProducto, int CantidadProductos,double MembresiaAnual)
+        {
+            if (CantidadProductos < 0)
+            {
+                PrecioProducto = 0.0;
+            }
+            double MontoBruto = PrecioProducto * CantidadProductos;
+            var IVA = 0.16;
+            double CalculoIVA = PrecioProducto * IVA;
+            double Total = CalculoIVA + MontoBruto;
+            double CostoTotalParaNuevosClientes = Total + MembresiaAnual;
+            return Total;
+        }
 
 
     }
