@@ -10,8 +10,32 @@ namespace FacturacionTiendaDePeluches
 
         private string NoPieza;
         private string Descripcion;
-        private int CantidadProductos;
-        private double PrecioProducto;
+        private int CantidadProductos = 0;
+        private double PrecioProducto =0.0;
+
+        //Constructor Factura
+        public void Factura() { }
+
+        // Uso de get set para el numero de pieza
+
+        public string Pieza
+        {
+            get
+            {
+              return NoPieza;}
+            set
+            { NoPieza = value; }
+               
+            
+        }
+
+        // Uso de get set para la descripcion del peluche
+
+        //Uso de get set para cantidad de productos
+
+        //Uso de Get set para precio
+
+
 
 
     }
